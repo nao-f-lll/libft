@@ -131,12 +131,34 @@ int     main(void)
    printf("%c\n", ft_tolower(z_upper));
 */
 
+ /* ft_strchr.c
     char * text = "Hello\0";
     printf("%p\n", text + 5);
     printf("%p\n", ft_strchr(text, '\0'));
      printf("%p\n", text + 2);
     printf("%p\n", ft_strchr(text, 'l'));
     printf("%p\n", ft_strchr(text, 'p'));
+*/
+
+	
+	/*
+	// ft_strrchr.c
+	char	text[6] = "aaaaa\0";
+	printf("%p\n", text + 4);
+	printf("%p\n", ft_strrchr(text, 'a'));
+	printf("%p\n", text + 5);
+	printf("%p\n", ft_strrchr(text, '\0'));
+	printf("%p\n", ft_strrchr(text, 'c'));
+*/
+
+
+/*	
+        char *text = "Namma";
+        printf("%p\n", (text + 3));
+        printf("%p\n", ft_memchr(text, 'm', 4));
+        return (0);
+
+*/
 
    return (0);
 }
