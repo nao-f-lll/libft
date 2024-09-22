@@ -19,8 +19,10 @@ FUNCTIONS= ft_bzero.c\
            ft_strlcat.c\
            ft_strlen.c\
            ft_strrchr.c\
-           ft_toupper.c
-
+           ft_toupper.c\
+	   ft_memcmp.c\
+	   ft_strnstr
+			
 OBJ= $(FUNCTIONS:.c=.o)
 
 $(NAME): $(OBJ)

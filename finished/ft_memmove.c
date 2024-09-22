@@ -6,15 +6,13 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 	if (src == dest || n == 0)
 		return (dest);
-	index = n - 1;
+	if (dest > src)
 	{
-		if (dest > src)
-		{
-			while (index-- > 0)
-				((char *)dest)[index] = ((char *)src)[index];
-		}
-		else
-			ft_memcpy(dest, src, n);
+		index = n;
+		while (index-- > 0)
+			((char *)dest)[index] = ((char *)src)[index];
 	}
+	else
+		ft_memcpy(dest, src, n);
 	return (dest);
 }

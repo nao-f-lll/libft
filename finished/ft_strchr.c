@@ -5,6 +5,8 @@ char	*ft_strchr(const char *s, int c)
 	int	index;
 
 	index = 0;
+	if (c > 255)
+		c = c % 256;
 	while (s[index])
 	{
 		if (s[index] == c)
